@@ -1,0 +1,74 @@
+			.box {
+				font-weight:bold;
+				display:inline-block;
+				background:#fff 0 0 repeat;
+				margin-top: -10px;
+				margin-left: -10px;	
+			}
+
+			/*.box:after,.box:before {
+				content: "";
+				float:left;
+				border:1.35em solid #000;
+				height:1.7em;
+				border-bottom: 1px solid #000;				
+			}
+
+			.box:after {
+				border-right-color:solid;	
+             }
+
+			.box:before {
+				border-left-color:solid;
+             }*/
+
+			.box a:link, .box a:visited { 
+				color:#fff;
+				text-decoration:none;
+			    float:left;
+			    height:3.0em;
+				overflow:hidden;
+				border-bottom: 1px solid #999;
+				
+			}
+
+			.box span {
+				background:#444;
+				display:inline-block;
+				line-height:2.6em;
+				padding:0 1em;
+				margin-top:0.1em;
+				position:relative;
+				-webkit-transition: background-color 0.2s, margin-top 0.2s;  /* Saf3.2+, Chrome */
+				-moz-transition: background-color 0.2s, margin-top 0.2s;  /* FF4+ */
+				-ms-transition: background-color 0.2s, margin-top 0.2s;  /* IE10 */
+				-o-transition: background-color 0.2s, margin-top 0.2s;  /* Opera 10.5+ */
+				transition: background-color 0.2s, margin-top 0.2s;
+			}
+
+			.box a:hover span {
+				background:#fdf5ce;
+				color:#c77405;
+				font-weight: bold;
+				margin-top:0.5em;
+			}
+
+			.box span:before {
+				content: "";
+				position:absolute;
+				bottom:2.5em;
+				left:0;
+				border-right:0.5em solid #f6a828;
+				border-top:0.5em solid #444;
+			}
+
+			.box span:after {
+				content: "";
+				position:absolute;
+				bottom:2.5em;
+				right:0;
+				border-left:0.5em solid #f6a828;
+				border-top:0.5em solid #444;
+			}
+
+		

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+    <display-name>CROMER</display-name>
+    <description>
+      A tool for CROss-document Main Events and Entities Recognition!
+    </description>
+
+    <listener>
+	<listener-class>servlet.AppServletContextListener</listener-class>
+    <init-param>
+      <param-name>indexPath</param-name>
+      <param-value>indexes</param-value>
+    </init-param>
+    </listener>
+
+    <!-- Define servlets that are included in the application -->
+
+  <servlet>
+    <servlet-name>WebController</servlet-name>
+    <display-name>WebController</display-name>
+    <description>Web Monitor Servlet</description>
+    <servlet-class>servlet.WebController</servlet-class>
+    <init-param>
+      <param-name>indexPath</param-name>
+      <param-value>indexes/</param-value>
+    </init-param>
+    <init-param>
+      <param-name>uploadPath</param-name>
+      <param-value>upload/</param-value>
+    </init-param>
+  <load-on-startup>0</load-on-startup>
+  </servlet>
+
+  <servlet>
+    <description></description>
+    <display-name>UploadServlet</display-name>
+    <servlet-name>UploadServlet</servlet-name>
+    <servlet-class>servlet.UploadServlet</servlet-class>
+    <init-param>
+       <param-name>uploadPath</param-name>
+       <param-value>upload/</param-value>
+      </init-param>
+  </servlet>
+
+  
+  <servlet-mapping>
+    <servlet-name>UploadServlet</servlet-name>
+    <url-pattern>/pages/upload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WebController</servlet-name>
+    <url-pattern>/pages/update</url-pattern>
+  </servlet-mapping>
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+
+  <session-config>
+    <session-timeout>3600</session-timeout>
+  </session-config>
+</web-app>

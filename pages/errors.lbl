@@ -1,0 +1,4 @@
+<%
+final String CONTACT_ADMIN = "Try again later or contact the administrator.";
+final String MYSQL_CONNECTION_FAILED = "<div style='background:#F5ECCE'><img src='css/images/warning.gif'> DATABASE CONNECTION FAILED! Can't connect to MySQL server. <br>"+CONTACT_ADMIN+"</div>";
+%>
