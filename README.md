@@ -7,4 +7,4 @@ Authors: Christian Girardi, Manuela Speranza, Rachele Sprugnoli, Sara Tonelli
 
 Affiliation: Fondazione Bruno Kessler (FBK)
 
-The CROMER's source code will be available soon.
+The CROMER's manual will be available soon.
